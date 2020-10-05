@@ -3,7 +3,7 @@ public class Expression {
     private double y;
     MathAction action;
 
-    public Expression(String data) throws NumberFormatException, IncorrectInput {
+    public Expression(String data) throws IncorrectInput {
         String[] parseData = data.split(" ");
         if (data.contains("q")) {
             action = MathAction.STOP;
